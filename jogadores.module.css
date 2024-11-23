@@ -1,0 +1,96 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6; /* Para melhorar a legibilidade */
+}
+
+.header {
+    background: linear-gradient(to right, #1d3b6d, #a50044); /* Azul e Grená do FC Barcelona */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.headerTitle {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    color: #ffcc00; /* Dourado */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efeito sutil */
+}
+
+.headerSubtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Container de Jogadores */
+.playersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1200px; /* Limita a largura máxima em telas grandes */
+}
+
+/* Cartão de Jogador */
+.playerCard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%; /* Garante que ocupe 100% do espaço disponível em telas menores */
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playerCard:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.playerImage {
+    width: 100%; /* Adapta a imagem ao tamanho do cartão */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Ajusta o conteúdo sem distorcer */
+    border-radius: 8px 8px 0 0; /* Arredonda somente as bordas superiores */
+}
+
+.playerName {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1d3b6d; /* Azul do FC Barcelona */
+    margin: 15px 0 10px;
+}
+
+.playerInfo {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.playerDescription {
+    font-size: 0.95em;
+    color: #333;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .playerCard {
+        max-width: 100%; /* O cartão ocupa toda a largura disponível */
+    }
+
+    .playersContainer {
+        gap: 15px; /* Reduz o espaçamento entre cartões */
+        padding: 10px; /* Ajusta o espaçamento em telas menores */
+    }
+}
