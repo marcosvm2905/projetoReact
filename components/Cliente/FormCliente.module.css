@@ -1,0 +1,98 @@
+/* Estilos Gerais */
+:global(body) {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.fcBarcelonaBg {
+    background: linear-gradient(to bottom, #1d3b6d, #a50044); /* Azul e Grená do FC Barcelona */
+    color: white;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+.formHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffcc00; /* Cor dourada */
+    margin: 0;
+}
+
+.formSubtitle {
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Formulário */
+.formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formFieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.formLegend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1d3b6d; /* Azul do FC Barcelona */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilo de Inputs e Labels */
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formLabel {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.formInput::placeholder {
+    color: #aaa;
+}
+
+/* Botão */
+.formButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #1d3b6d; /* Azul do FC Barcelona */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formButton:hover {
+    background-color: #a50044; /* Grená do FC Barcelona */
+}
